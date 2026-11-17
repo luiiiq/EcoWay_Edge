@@ -215,6 +215,18 @@ As bibliotecas externas são instaladas automaticamente pelo PlatformIO a partir
 - C++ — desenvolvimento do firmware e controle dos componentes eletrônicos.
 
 ## Como executar o projeto
+
+### Rev. 1 – Simulação no Wokwi
+1. Acesse o link da simulação disponibilizado neste README.
+2. Clique em **Start Simulation** para iniciar o projeto.
+3. Aguarde a mensagem de aproximação no display LCD.
+4. Aproxime um objeto do sensor HC-SR04 para iniciar o monitoramento.
+5. Altere os valores dos sensores virtuais para observar as classificações e os indicadores luminosos.
+6. Abra o Monitor Serial para acompanhar os dados enviados pelo Arduino (115200 bauds).
+
+**Observação:** A Rev. 1 corresponde à simulação do circuito no Wokwi.
+
+### Execução pelo Visual Studio Code e PlatformIO
 1. Monte o circuito utilizando o Arduino Uno e os componentes descritos neste README.
 2. Conecte o Arduino ao computador.
 3. Abra o projeto no Visual Studio Code.
