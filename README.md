@@ -212,7 +212,16 @@ O arquivo principal `main.cpp` deve estar localizado na pasta `src/`.
 As bibliotecas externas são instaladas automaticamente pelo PlatformIO a partir das dependências configuradas.
 
 ## Linguagem utilizada
-- C++ — desenvolvimento do firmware e controle dos componentes eletrônicos.
+<img
+  align="left" 
+  alt="c++" 
+  title="c++"
+  width="30px" 
+  style="padding-right: 10px;" 
+  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" 
+/>
+<br>
+<br>
 
 ## Como executar o projeto
 
