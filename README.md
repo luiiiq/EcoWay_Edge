@@ -191,9 +191,9 @@ A comunicação serial está configurada para **115200 bauds**.
 - `avr/pgmspace.h` — utilização da memória Flash para armazenar os desenhos da animação.
 
 ### Configuração do ambiente (PlatformIO)
-O projeto utiliza o **PlatformIO IDE**, integrado ao Visual Studio Code, para desenvolver e compilar o firmware do Arduino Uno.
+O firmware do projeto foi desenvolvido em C++ para o Arduino Uno, utilizando o PlatformIO IDE, integrado ao Visual Studio Code.
 
-O arquivo `platformio.ini` deve estar na raiz do projeto e conter:
+O arquivo `platformio.ini`, localizado na raiz do projeto, contém as configurações da plataforma, da placa, do framework, da velocidade de comunicação Serial e das bibliotecas utilizadas.
 
 ```ini
 [env:uno]
@@ -207,9 +207,9 @@ lib_deps =
     adafruit/DHT sensor library@^1.4.7
 ```
 
-O arquivo principal `main.cpp` deve estar localizado na pasta `src/`.
+O arquivo principal `main.cpp` está localizado na pasta `src/`.
 
-As bibliotecas externas são instaladas automaticamente pelo PlatformIO a partir das dependências configuradas.
+As dependências externas estão declaradas no arquivo `platformio.ini`.
 
 ## Linguagem utilizada
 <img
@@ -227,26 +227,13 @@ As bibliotecas externas são instaladas automaticamente pelo PlatformIO a partir
 
 ### Rev. 1 – Simulação no Wokwi
 1. Acesse o link da simulação disponibilizado neste README.
-2. Clique em **Start Simulation** para iniciar o projeto.
+2. Clique em **Start the Simulation** para iniciar o projeto.
 3. Aguarde a mensagem de aproximação no display LCD.
 4. Aproxime um objeto do sensor HC-SR04 para iniciar o monitoramento.
 5. Altere os valores dos sensores virtuais para observar as classificações e os indicadores luminosos.
 6. Abra o Monitor Serial para acompanhar os dados enviados pelo Arduino (115200 bauds).
 
 **Observação:** A Rev. 1 corresponde à simulação do circuito no Wokwi.
-
-### Execução pelo Visual Studio Code e PlatformIO
-1. Monte o circuito utilizando o Arduino Uno e os componentes descritos neste README.
-2. Conecte o Arduino ao computador.
-3. Abra o projeto no Visual Studio Code.
-4. Certifique-se de que a extensão PlatformIO IDE esteja instalada.
-5. Verifique as dependências no arquivo `platformio.ini`.
-6. Selecione o ambiente `uno` no PlatformIO.
-7. Clique em **Upload** para compilar e enviar o código ao Arduino.
-8. Abra o Monitor Serial e configure a velocidade para 115200 bauds.
-9. Aguarde a mensagem de aproximação no display LCD.
-10. Aproxime um objeto ou uma pessoa do sensor HC-SR04 para iniciar o monitoramento.
-11. Altere os valores dos sensores para observar as classificações e os indicadores luminosos.
 
 ## Versão do projeto
 **Revisão 1 — Monitoramento de Calor Urbano.**
